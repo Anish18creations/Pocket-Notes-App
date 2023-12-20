@@ -7,6 +7,7 @@ import disable from '../Assets/disable.png';
 import Enable from '../Assets/Enable.png';
 import Ellipse from '../Assets/Ellipse.png';
 import send from '../Assets/send.mp3';
+import tap from '../Assets/tap.mp3';
 
 function Mainbar() {
 
@@ -79,6 +80,7 @@ function Mainbar() {
     setinitials(b);
     settitle(c);
     setshownotes(true);
+    new Audio(tap).play();
   }
 
   const storenotes = () => {
