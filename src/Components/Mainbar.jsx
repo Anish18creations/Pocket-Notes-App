@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../Styles/Mainbar.module.css';
 import Acceptinput from './Acceptinput';
 import Bg from '../Assets/Bg.png';
@@ -6,6 +6,7 @@ import Lock from '../Assets/Lock.png';
 import disable from '../Assets/disable.png';
 import Enable from '../Assets/Enable.png';
 import Ellipse from '../Assets/Ellipse.png';
+import send from '../Assets/send.mp3';
 
 function Mainbar() {
 
@@ -22,8 +23,6 @@ function Mainbar() {
   let [display, setdisplay] = useState([]);
   let [count, setcount] = useState(true);
   let storedData = {};
-
-  
 
   useEffect(() => {
 
@@ -43,13 +42,13 @@ function Mainbar() {
       }
     }
     getNotes();
-  },[]);
+  }, []);
 
   useEffect(() => {
     let stored = localStorage.getItem("Gn");
     setcondition(true);
     setdisplay(JSON.parse(stored));
-  },[count]);
+  }, [count]);
 
   const popupbox = () => {
     setbuttonpopup(true);
@@ -89,6 +88,9 @@ function Mainbar() {
       alert('Please type something to store as a note!');
       return;
     }
+
+    new Audio(send).play();
+
     console.log(typednote);
 
     let group = JSON.parse(localStorage.getItem(iid));
@@ -213,7 +215,7 @@ function Mainbar() {
         :
         ""
       }
-      <Acceptinput trigger={buttonpopup} settrigger={setbuttonpopup} storein={count} setstorein={setcount}/>
+      <Acceptinput trigger={buttonpopup} settrigger={setbuttonpopup} storein={count} setstorein={setcount} />
 
     </div>
   )
