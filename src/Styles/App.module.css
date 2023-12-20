@@ -1,0 +1,9 @@
+
+.sidebar{
+  position: absolute;
+  width: 30vw;
+  height: 100vh;
+  background: white;
+  left:0%;
+}
+

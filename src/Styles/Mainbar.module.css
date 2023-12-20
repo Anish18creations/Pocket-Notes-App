@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
+
+.title {
+    position: absolute;
+    width: 219px;
+    height: 41px;
+    top: 7vh;
+    left: 6vw;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #000000;
+    cursor: default;
+}
+
+.addbtn {
+    position: absolute;
+    left: 23vw;
+    bottom: 3vh;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+    background: #16008B;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.btn {
+    position: absolute;
+    padding: 2px;
+    margin-left: 11px;
+}
+
+.bar::-webkit-scrollbar {
+    display: none;
+}
+
+.user {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: 16px;
+    color: #FFFFFF;
+    justify-content: center;
+    cursor: default;
+}
+
+.user1 {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: 20px;
+    height: 10px;
+    color: #FFFFFF;
+    /*justify-content: center;
+    align-items: center;*/
+    padding: 8px;
+    cursor: default;
+}
+
+.onhover:hover {
+    background: #2F2F2F2B;
+    border-radius: 16px;
+}
+
+.bg {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 500px;
+}
+
+.topic {
+    position: absolute;
+    top: 55%;
+    left: 39%;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #000000;
+}
+
+.desc {
+    position: absolute;
+    width: 680px;
+    height: 64px;
+    top: 65%;
+    left: 22%;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #292929;
+}
+
+.lock {
+    position: absolute;
+    bottom: 2vh;
+    left: 41%;
+}
+
+.encryption {
+    position: absolute;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #292929;
+    bottom: 1vh;
+    left: 43%;
+}
+
+.initials {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+::placeholder {
+    position: absolute;
+    left: 1vw;
+    top: 2vh;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+    color: #9A9A9A;
+}
+
+textarea {
+    position: fixed;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #9A9A9A;
+    padding: 2vh 2vw 1.5vw 1vw;
+}
+
+.notes {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.035em;
+    text-align: left;
+    color: #000000;
+}
+
+.sizing {
+    min-height: '8vh';
+    border-radius: 5px;
+    box-shadow: ' 0px 4px 20px 0px #00000040';
+    height: fit-content;
+    background: #FFFFFF;
+    width: 67vw;
+}
+
+.heading {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.initial {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.dateandtime {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #353535;
+}
