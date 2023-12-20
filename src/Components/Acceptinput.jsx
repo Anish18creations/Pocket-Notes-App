@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../Styles/Acceptinput.module.css';
+import store from '../Assets/store.mp3';
 
 function Acceptinput(props) {
 
@@ -83,6 +84,7 @@ function Acceptinput(props) {
       let demo = JSON.stringify(data);
       localStorage.setItem("Gn", demo);
 
+      new Audio(store).play();
       props.settrigger(false);
       props.setstorein(!(props.storein));
 
