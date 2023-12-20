@@ -8,6 +8,7 @@ import Enable from '../Assets/Enable.png';
 import Ellipse from '../Assets/Ellipse.png';
 import send from '../Assets/send.mp3';
 import tap from '../Assets/tap.mp3';
+import popup from '../Assets/popup.mp3';
 
 function Mainbar() {
 
@@ -55,8 +56,7 @@ function Mainbar() {
     setbuttonpopup(true);
     setcondition(true);
     setshownotes(false);
-    const interests = localStorage.getItem("Gn");
-    setdisplay(JSON.parse(interests));
+    new Audio(popup).play();
   }
 
 
