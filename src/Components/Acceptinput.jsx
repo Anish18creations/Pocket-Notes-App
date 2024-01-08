@@ -96,11 +96,9 @@ function Acceptinput(props) {
   (
     <>
     <div className={styles.popupcontainer} onClick={()=>props.settrigger(false)}></div>
-    <div className={styles.popupcontainer} style={{top:'30vh' , width:'27%' , height:'53%'}} 
-    onClick={()=>props.settrigger(false)}></div>
-    <div className={styles.popupcontainer} style={{top:'30vh' , left:'81.5vw' , width:'19%' , height:'53%'}} 
-    onClick={()=>props.settrigger(false)}></div>
-    <div className={styles.popupcontainer} style={{top:'82.949vh'}} onClick={()=>props.settrigger(false)}></div>
+    <div className={styles.popupcontainer1} onClick={()=>props.settrigger(false)}></div>
+    <div className={styles.popupcontainer2}  onClick={()=>props.settrigger(false)}></div>
+    <div className={styles.popupcontainer3} onClick={()=>props.settrigger(false)}></div>
     <div className={styles.popup}>
 
       <div className={styles.title}>Create New group</div><br />
@@ -108,16 +106,11 @@ function Acceptinput(props) {
         <div className={styles.cc}>Choose colour</div><br />
         <input type='text' className={styles.text} placeholder='Enter group name' id='groupname' />
         <div className={styles.violet} onClick={() => { setcolor('#B38BFA') }} />
-        <div className={styles.violet} style={{ position: 'absolute', left: '26vw', background: '#FF79F2' }}
-          onClick={() => { setcolor('#FF79F2') }} />
-        <div className={styles.violet} style={{ position: 'absolute', left: '30vw', background: '#43E6FC' }}
-          onClick={() => { setcolor('#43E6FC') }} />
-        <div className={styles.violet} style={{ position: 'absolute', left: '34vw', background: '#F19576' }}
-          onClick={() => { setcolor('#F19576') }} />
-        <div className={styles.violet} style={{ position: 'absolute', left: '38vw', background: '#0047FF' }}
-          onClick={() => { setcolor('#0047FF') }} />
-        <div className={styles.violet} style={{ position: 'absolute', left: '42vw', background: '#6691FF' }}
-          onClick={() => { setcolor('#6691FF') }} />
+        <div className={styles.pink} onClick={() => { setcolor('#FF79F2') }} />
+        <div className={styles.skyblue} onClick={() => { setcolor('#43E6FC') }} />
+        <div className={styles.orange} onClick={() => { setcolor('#F19576') }} />
+        <div className={styles.darkblue} onClick={() => { setcolor('#0047FF') }} />
+        <div className={styles.lightblue} onClick={() => { setcolor('#6691FF') }} />
         <div className={styles.crtbtn} onClick={() => create()}><p style={{ marginTop: '2px', cursor: 'pointer' }}>
           Create</p></div>
   </div>

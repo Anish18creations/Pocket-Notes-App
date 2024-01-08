@@ -1,121 +1,416 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
 
-.popup{
-    position: absolute;
-    left: 27vw;
-    top: 30vh;
-    width: 740px;
-    height: 317px;
-    border: 2px solid #CCCCCC;
-    background: #FFFFFF;
-    border-radius: 6px;
+@media (min-width: 361px) {
+    .popup{
+        position: absolute;
+        left: 27vw;
+        top: 30vh;
+        width: 740px;
+        height: 317px;
+        border: 2px solid #CCCCCC;
+        background: #FFFFFF;
+        border-radius: 6px;
+    }
+    
+    .popupcontainer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background-color: rgba(47, 47, 47, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .popupcontainer1{
+        position: fixed;
+        top: 30vh ;
+        width: 27%;
+        height: 53%;
+        left: 0;
+        background-color: rgba(47, 47, 47, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .popupcontainer2{
+        position: fixed;
+        top: 30vh ;
+        left: 81.5vw ; 
+        width: 19% ; 
+        height: 53%;
+        background-color: rgba(47, 47, 47, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .popupcontainer3{
+        position: fixed;
+        top: 82.949vh;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background-color: rgba(47, 47, 47, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .title {
+        position: absolute;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.035em;
+        text-align: left;
+        color: #000000;
+        top: 5vh;
+        left: 5vw;
+    }
+    
+    .gn {
+        position: absolute;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size:  1.7rem;
+        font-weight: 500;
+        letter-spacing: 0.035em;
+        text-align: left;
+        color: #000000;
+        left: 5vw;
+        top: 16vh;
+    }
+    
+    .cc {
+        position: absolute;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 1.7rem;
+        font-weight: 500;
+        letter-spacing: 0.035em;
+        text-align: left;
+        color: #000000;
+        left: 5vw;
+        bottom: 12vh;
+    }
+    
+    .text {
+        position: absolute;
+        left: 21vw;
+        top: 15vh;
+        border-radius: 1.375rem;
+        border-width: 0.125rem;
+        border-style: solid;
+        border-color: #CCCCCC;
+        width: 23vw;
+        height: 3.3vh;
+        padding: 15px;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+        letter-spacing: 0.035em;
+        text-align: left;
+        color: #000000;
+    }
+    
+    input[type="text"]::placeholder {
+        left: 1.4vw;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 900;
+        letter-spacing: 0.035em;
+        text-align: left;
+        color: #979797;
+    }
+    
+    .violet {
+        position: absolute;
+        border-radius: 50%;
+        background: #B38BFA;
+        width: 40px;
+        height: 40px;
+        left: 22vw;
+        bottom: 12vh;
+    }
+
+    .pink{
+        position: absolute;
+        border-radius: 50%;
+        background: #FF79F2;
+        width: 40px;
+        height: 40px;
+        left: 26vw;
+        bottom: 12vh;
+    }
+
+    .skyblue{
+        position: absolute;
+        border-radius: 50%;
+        background: #43E6FC;
+        width: 40px;
+        height: 40px;
+        left: 30vw;
+        bottom: 12vh;
+    }
+
+    .orange{
+        position: absolute;
+        border-radius: 50%;
+        background: #F19576;
+        width: 40px;
+        height: 40px;
+        left: 34vw;
+        bottom: 12vh;
+    }
+
+    .darkblue{
+        position: absolute;
+        border-radius: 50%;
+        background: #0047FF;
+        width: 40px;
+        height: 40px;
+        left: 38vw;
+        bottom: 12vh;
+    }
+
+    .lightblue{
+        position: absolute;
+        border-radius: 50%;
+        background: #6691FF;
+        width: 40px;
+        height: 40px;
+        left: 42vw;
+        bottom: 12vh;
+    }
+    
+    .crtbtn {
+        position: absolute;
+        width: 154px;
+        height: 38px;
+        bottom: 2vh;
+        right: 2vw;
+        border-radius: 11px;
+        background: #001F8B;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.035em;
+        text-align: left;
+        color: #FFFFFF;
+        text-align: center;
+    }
 }
 
-.popupcontainer{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    background-color: rgba(47, 47, 47, 0.75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
+    @media (max-width: 360px){
+        .popup{
+            position: absolute;
+            left: 34%;
+            top: 30vh;
+            width: 261%;
+            height: 32.5vh;
+            border: 2px solid #CCCCCC;
+            background: #FFFFFF;
+            border-radius: 6px;
+        } 
 
-.title {
-    position: absolute;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 29px;
-    font-weight: 500;
-    line-height: 46px;
-    letter-spacing: 0.035em;
-    text-align: left;
-    color: #000000;
-    top: 5vh;
-    left: 5vw;
-}
+        .popupcontainer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30vh;
+            background-color: rgba(47, 47, 47, 0.75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
 
-.gn {
-    position: absolute;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 27px;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: 0.035em;
-    text-align: left;
-    color: #000000;
-    left: 5vw;
-    top: 16vh;
-}
+        .popupcontainer1{
+            position: fixed;
+            top: 30vh ;
+            width: 10%;
+            height: 33vh;
+            left: 0;
+            background-color: rgba(47, 47, 47, 0.75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }  
+        
+        .popupcontainer2{
+            position: fixed;
+            top: 30vh ;
+            right: 0%;
+            width: 10% ; 
+            height: 33vh;
+            background-color: rgba(47, 47, 47, 0.75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
 
-.cc {
-    position: absolute;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 27px;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: 0.035em;
-    text-align: left;
-    color: #000000;
-    left: 5vw;
-    bottom: 12vh;
-}
+        .popupcontainer3{
+            position: fixed;
+            top: 62.9375vh;
+            left: 0;
+            width: 100%;
+            height: 37vh;
+            background-color: rgba(47, 47, 47, 0.75);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .title {
+            position: absolute;
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 1.13rem;
+            font-weight: 500;
+            letter-spacing: 0.035em;
+            text-align: left;
+            color: #000000;
+            top: 2vh;
+            left: 4vw;
+        }
+        
+        .gn {
+            position: absolute;
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.035em;
+            text-align: left;
+            color: #000000;
+            left: 5vw;
+            top: 7vh;
+        }
+        
+        .cc {
+            position: absolute;
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.035em;
+            text-align: left;
+            color: #000000;
+            left: 5vw;
+            bottom: 18vh;
+        }
+        
+        .text {
+            position: absolute;
+            left: 36vw;
+            top: 6.5vh;
+            border-radius: 22px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #CCCCCC;
+            width: 32vw;
+            height: 16px;
+            padding: 6px;
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: 0.035em;
+            text-align: left;
+            color: #000000;
+        }
 
-.text {
-    position: absolute;
-    left: 21vw;
-    top: 15vh;
-    border-radius: 22px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #CCCCCC;
-    width: 23vw;
-    height: 36px;
-    padding: 10px;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 23px;
-    font-weight: 900;
-    letter-spacing: 0.035em;
-    text-align: left;
-    color: #000000;
-}
+        input[type="text"]::placeholder {
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 0.625rem;
+            font-weight: 900;
+            letter-spacing: 0.035em;
+            text-align: left;
+            color: #979797;
+        }
+        
+        .violet {
+            position: absolute;
+            border-radius: 50%;
+            background: #B38BFA;
+            width: 15px;
+            height: 15px;
+            left: 40vw;
+            bottom: 18.1vh;
+        }
 
-input[type="text"]::placeholder {
-    left: 1.4vw;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 23px;
-    font-weight: 900;
-    letter-spacing: 0.035em;
-    text-align: left;
-    color: #979797;
-}
+        .pink{
+            position: absolute;
+            border-radius: 50%;
+            background: #FF79F2;
+            width: 15px;
+            height: 15px;
+            left: 46vw;
+            bottom: 18.1vh;
+        }
 
-.violet {
-    position: absolute;
-    border-radius: 50%;
-    background: #B38BFA;
-    width: 40px;
-    height: 40px;
-    left: 22vw;
-    bottom: 12vh;
-}
+        .skyblue{
+            position: absolute;
+            border-radius: 50%;
+            background: #43E6FC;
+            width: 15px;
+            height: 15px;
+            left: 52vw;
+            bottom: 18.1vh;
+        }
 
-.crtbtn {
-    position: absolute;
-    width: 154px;
-    height: 38px;
-    bottom: 2vh;
-    right: 2vw;
-    border-radius: 11px;
-    background: #001F8B;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0.035em;
-    text-align: left;
-    color: #FFFFFF;
-    text-align: center;
+        .orange{
+            position: absolute;
+            border-radius: 50%;
+            background: #F19576;
+            width: 15px;
+            height: 15px;
+            left: 58vw;
+            bottom: 18.1vh;
+        }
+
+        .darkblue{
+            position: absolute;
+            border-radius: 50%;
+            background: #0047FF;
+            width: 15px;
+            height: 15px;
+            left: 64vw;
+            bottom: 18.1vh;
+        }
+
+        .lightblue{
+            position: absolute;
+            border-radius: 50%;
+            background: #6691FF;
+            width: 15px;
+            height: 15px;
+            left: 70vw;
+            bottom: 18.1vh;
+        }
+        
+        .crtbtn {
+            position: absolute;
+            width: 94px;
+            height: 28px;
+            bottom: 2vh;
+            left: 28vw;
+            border-radius: 6px;
+            background: #16008B;
+            font-family: 'Roboto Flex', sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0.035em;
+            text-align: left;
+            color: #FFFFFF;
+            text-align: center;
+        }
 }

@@ -1,215 +1,591 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
 
-.title {
-    position: absolute;
-    width: 219px;
-    height: 41px;
-    top: 7vh;
-    left: 6vw;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 41px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #000000;
-    cursor: default;
+@media (max-width: 360px) {
+
+    /*mobile version*/
+    .bg {
+        display: none;
+    }
+
+    .title {
+        font-size: 2rem;
+        position: absolute;
+        top: 7vh;
+        left: 15vw;
+        width: 80vw;
+        height: 10vh;
+        line-height: 2rem;
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #000000;
+        cursor: default;
+    }
+
+    .addbtn {
+        position: absolute;
+        left: 68vw;
+        bottom: 3vh;
+        width: 77%;
+        height: 12%;
+        border-radius: 50%;
+        background: #16008B;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 2.375rem;
+        font-weight: 500;
+        line-height: 1.6rem;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+
+    .btn {
+        position: absolute;
+        padding: 2.0rem;
+        font-size: 3.5rem;
+    }
+
+    .showinfo {
+        position: absolute;
+        top: 15vh;
+        width: 100vw;
+        height: 65vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        outline: none;
+    }
+
+    .bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .user {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: center;
+        width: 66vw;
+        justify-content: center;
+        cursor: default;
+        color: black;
+        font-size: 22px;
+    }
+
+    .user1 {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: center;
+        width: 30px;
+        height: 15px;
+        color: #FFFFFF;
+        padding: 4px;
+        cursor: default;
+        border-radius: 50%;
+    }
+
+    .onhover:hover {
+        background: #2F2F2F2B;
+    }
+
+    .onhover {
+        height: 10vh;
+        border-radius: 8px;
+        width: 100vw;
+    }
+
+    .topbar {
+        position: absolute;
+        left: 0vw;
+        width: 100vw;
+        height: 9.1vh;
+        background: #001F8B;
+        cursor: default;
+    }
+
+    .heading {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #FFFFFF;
+        position: absolute;
+        left: 30vw;
+        color: white;
+        width: 69vw;
+        top: 3vh;
+        cursor: default;
+    }
+
+    .initials {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: 11vw;
+        width: 8vw;
+        height: 3vh;
+        margin-top: 2vh;
+        border-radius: 50%;
+        cursor: default;
+        padding: 10px;
+    }
+
+    .backarrow {
+        width: 21px;
+        height: 16px;
+        position: absolute;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+
+    .scrollarea {
+        position: absolute;
+        left: 0vw;
+        top: 9vh;
+        width: 100vw;
+        height: 56vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        outline: none;
+        background: #D9D9D9;
+    }
+
+    .gap {
+        height: 5vh;
+    }
+
+    .sizing {
+        border-radius: 5px;
+        box-shadow: 0px 4px 20px 0px #00000040;
+        height: fit-content;
+        background: #FFFFFF;
+        width: 87vw;
+        margin-left: 2.5vw;
+    }
+
+    .notes {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0.035em;
+        text-align: left;
+        color: #000000;
+    }
+
+    .dateandtime {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 11.6px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #353535;
+        margin-left: 45vw;
+    }
+
+    .gap2 {
+        height: 1vh;
+    }
+
+    .ellipse {
+        width: 4.8px;
+        height: 5px;
+    }
+
+    .pic2 {
+        position: absolute;
+        left: 0vw;
+        width: 96vw;
+        height: 33.9vh;
+        top: 66.1vh;
+        background: #DAE5F5;
+    }
+
+    .textarealayout2 {
+        position: absolute;
+        width: 97vw;
+        height: 33.9vh;
+        background: #001F8B;
+        bottom: 0vh;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 9px;
+        border-color: #001F8B;
+        padding: 3px;
+    }
+
+    .design2 {
+        position: absolute;
+        width: 88vw;
+        height: 24vh;
+        top: 3vh;
+        left: 3vw;
+        background: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 9px;
+        border-color: #CCCCCC;
+        cursor: default;
+        resize: none;
+        padding-top: 30px;
+        padding-left: 10px;
+        font-size: 18px;
+        color: #9A9A9A;
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+    }
+
+    ::placeholder {
+        position: absolute;
+        left: 2vw;
+        top: 4vh;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: #9A9A9A;
+    }
+
+    .send2 {
+        width: 21px;
+        height: 17.7px;
+        position: absolute;
+        right: 3.5vw;
+        bottom: 15vh;
+        cursor: pointer;
+    }
+
+    .topic,
+    .desc,
+    .lock,
+    .encryption,
+    .initial,
+    .design,
+    .send {
+        display: none;
+    }
 }
 
-.addbtn {
-    position: absolute;
-    left: 23vw;
-    bottom: 3vh;
-    width: 15%;
-    height: 10%;
-    border-radius: 50%;
-    background: #16008B;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 70px;
-    font-weight: 500;
-    line-height: 58px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #FFFFFF;
-}
+@media (min-width: 361px) {
+    /*pc,laptop version*/
 
-.btn {
-    position: absolute;
-    padding: 2px;
-    margin-left: 11px;
-}
+    .gap {
+        height: 5vh;
+    }
 
-.bar::-webkit-scrollbar {
-    display: none;
-}
+    .design2,
+    .send2 {
+        display: none;
+    }
 
-.user {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 44px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    width: 16px;
-    color: #FFFFFF;
-    justify-content: center;
-    cursor: default;
-}
+    .textarealayout {
+        position: absolute;
+        width: 69.8vw;
+        height: 30vh;
+        background: #001F8B;
+        bottom: 0vh;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 9px;
+        border-color: #001F8B;
+        padding: 1vw;
+    }
 
-.user1 {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    text-align: center;
-    width: 20px;
-    height: 10px;
-    color: #FFFFFF;
-    /*justify-content: center;
-    align-items: center;*/
-    padding: 8px;
-    cursor: default;
-}
+    .design {
+        position: absolute;
+        width: 66.5vw;
+        height: 24vh;
+        background: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 9px;
+        border-color: #CCCCCC;
+        cursor: default;
+        resize: none;
+    }
 
-.onhover:hover {
-    background: #2F2F2F2B;
-    border-radius: 16px;
-}
+    .send {
+        position: absolute;
+        right: 2vw;
+        bottom: 5vh;
+        cursor: pointer;
+    }
 
-.bg {
-    position: absolute;
-    top: 15%;
-    left: 25%;
-    width: 500px;
-}
+    .title {
+        position: absolute;
+        top: 7vh;
+        left: 6vw;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #000000;
+        cursor: default;
+    }
 
-.topic {
-    position: absolute;
-    top: 55%;
-    left: 39%;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 59px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #000000;
-}
+    .pic {
+        position: absolute;
+        left: 28vw;
+        width: 72vw;
+        height: 100vh;
+        background: #DAE5F5;
+    }
 
-.desc {
-    position: absolute;
-    width: 680px;
-    height: 64px;
-    top: 65%;
-    left: 22%;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #292929;
-}
+    .addbtn {
+        position: absolute;
+        left: 23vw;
+        bottom: 3vh;
+        width: 15%;
+        height: 10%;
+        border-radius: 50%;
+        background: #16008B;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 4.375rem;
+        font-weight: 500;
+        line-height: 3.6rem;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
 
-.lock {
-    position: absolute;
-    bottom: 2vh;
-    left: 41%;
-}
+    .btn {
+        position: absolute;
+        padding: 0.125rem;
+        margin-left: 0.688rem;
+    }
 
-.encryption {
-    position: absolute;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #292929;
-    bottom: 1vh;
-    left: 43%;
-}
+    .showinfo {
+        position: absolute;
+        top: 15vh;
+        width: 28vw;
+        height: 70vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        outline: none;
+    }
 
-.initials {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 21px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #FFFFFF;
-}
+    .bar::-webkit-scrollbar {
+        display: none;
+    }
 
-::placeholder {
-    position: absolute;
-    left: 1vw;
-    top: 2vh;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0.02em;
-    color: #9A9A9A;
-}
+    .user {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: center;
+        width: 16px;
+        justify-content: center;
+        cursor: default;
+        color: black;
+        font-size: 24px;
+    }
 
-textarea {
-    position: fixed;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #9A9A9A;
-    padding: 2vh 2vw 1.5vw 1vw;
-}
+    .user1 {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: center;
+        width: 20px;
+        height: 10px;
+        color: #FFFFFF;
+        padding: 8px;
+        cursor: default;
+        border-radius: 50%;
+    }
 
-.notes {
-    margin-left: 2vw;
-    margin-right: 2vw;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0.035em;
-    text-align: left;
-    color: #000000;
-}
+    .onhover:hover {
+        background: #2F2F2F2B;
+        border-radius: 16px;
+    }
 
-.sizing {
-    min-height: '8vh';
-    border-radius: 5px;
-    box-shadow: ' 0px 4px 20px 0px #00000040';
-    height: fit-content;
-    background: #FFFFFF;
-    width: 67vw;
-}
+    .onhover {
+        height: 11vh;
+    }
 
-.heading {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #FFFFFF;
-}
+    .topbar {
+        position: absolute;
+        left: 28vw;
+        width: 72vw;
+        height: 9vh;
+        background: #001F8B;
+        cursor: default;
+    }
 
-.initial {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #FFFFFF;
-}
+    .bg {
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        width: 500px;
+    }
 
-.dateandtime {
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #353535;
+    .topic {
+        position: absolute;
+        top: 55%;
+        left: 39%;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #000000;
+    }
+
+    .desc {
+        position: absolute;
+        width: 680px;
+        height: 64px;
+        top: 65%;
+        left: 22%;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #292929;
+    }
+
+    .lock {
+        position: absolute;
+        bottom: 2vh;
+        left: 41%;
+    }
+
+    .encryption {
+        position: absolute;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #292929;
+        bottom: 1vh;
+        left: 43%;
+    }
+
+    .initials {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #FFFFFF;
+        position: absolute;
+        left: 1.8vw;
+        width: 3vw;
+        height: 4vh;
+        top: 1.5vh;
+        border-radius: 50%;
+        cursor: default;
+        padding: 5px;
+    }
+
+    .scrollarea {
+        position: absolute;
+        left: 30vw;
+        top: 9vh;
+        width: 70vw;
+        height: 56vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        outline: none;
+    }
+
+    ::placeholder {
+        position: absolute;
+        left: 1vw;
+        top: 2vh;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: #9A9A9A;
+    }
+
+    textarea {
+        position: fixed;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #9A9A9A;
+        padding: 2vh 2vw 1.5vw 1vw;
+    }
+
+    .notes {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0.035em;
+        text-align: left;
+        color: #000000;
+    }
+
+    .sizing {
+        min-height: 8vh;
+        border-radius: 5px;
+        box-shadow: 0px 4px 20px 0px #00000040;
+        height: fit-content;
+        background: #FFFFFF;
+        width: 67vw;
+    }
+
+    .heading {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #FFFFFF;
+        position: absolute;
+        left: 35vw;
+        color: white;
+        width: 20vw;
+        top: 2vh;
+        cursor: default;
+    }
+
+    .initial {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .dateandtime {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #353535;
+        margin-left: 48vw;
+    }
+
+    .gap2 {
+        height: 2vh;
+    }
+
+    .backarrow {
+        display: none;
+    }
+
 }
