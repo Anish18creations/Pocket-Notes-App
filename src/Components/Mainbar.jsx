@@ -59,7 +59,7 @@ function Mainbar() {
   const popupbox = () => {
     setbuttonpopup(true);
     setcondition(true);
-    setshownotes(false);
+    //setshownotes(true);
     new Audio(popup).play();
   }
 
@@ -192,7 +192,11 @@ function Mainbar() {
           <div className={styles.encryption}>end-to-end encrypted</div>
         </div>
         :
+        <>
+        
         <div className={styles.pic}>
+        <div className={styles.topbar2} ></div>
+        <div className={styles.topbar}  ></div>
           <div className={styles.textarealayout}>
             <textarea className={styles.design}
               placeholder='Enter your text here...........' id='Note' onChange={(e) => { handlechange(e) }} >
@@ -200,16 +204,21 @@ function Mainbar() {
           </div>
           <img src={image} alt='abc' className={styles.send} onClick={() => storenotes()}></img>
         </div>
+        </>
       }
       {shownotes ?
         <>
-          <div className={styles.topbar} >
+          
             <img src={Backarrow} alt='' className={styles.backarrow} onClick={() => {
               setshownotes(false);
               setcondition(true);
+              setpic(true);
             }}></img>
             <div className={styles.initials} style={{ background: bgcolor }}>{initials}</div>
-          </div>
+          
+         
+            
+          
           <div className={styles.heading}>{title}</div>
           <div className={styles.scrollarea}>
             {con.map((con) => (
