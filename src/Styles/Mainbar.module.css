@@ -34,14 +34,15 @@
         font-family: 'Roboto Flex', sans-serif;
         font-size: 2.375rem;
         font-weight: 500;
-        line-height: 1.6rem;
+        line-height: 1.5rem;
         letter-spacing: 0.02em;
         color: #FFFFFF;
     }
 
     .btn {
         position: absolute;
-        padding: 2.0rem;
+        padding-top: 2.1rem;
+        padding-left: 1.75rem;
         font-size: 3.5rem;
     }
 
@@ -204,7 +205,7 @@
         left: 0vw;
         width: 96vw;
         height: 33.9vh;
-        top: 66.1vh;
+        top: 65.1vh;
         background: #DAE5F5;
     }
 
@@ -214,7 +215,7 @@
         height: 34vh;
         background: #001F8B;
         margin-top: 0vh;
-        bottom: 0vh;
+        bottom: -1vh;
         border-style: solid;
         border-width: 1px;
         border-radius: 9px;
@@ -270,8 +271,8 @@
     .encryption,
     .initial,
     .design,
-    .send ,
-    .topbar  {
+    .send,
+    .topbar {
         display: none;
     }
 }
@@ -284,11 +285,10 @@
     }
 
     .design2,
-    .send2 ,
-    .textarealayout2 ,
-    .pic2 ,
-    .topbar2
-    {
+    .send2,
+    .textarealayout2,
+    .pic2,
+    .topbar2 {
         display: none;
     }
 

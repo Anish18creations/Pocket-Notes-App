@@ -31,7 +31,6 @@ function Mainbar() {
   let [con, setcon] = useState([]);
 
   useEffect(() => {
-
     const getNotes = () => {
       storedData = localStorage.getItem("Gn");
       if (storedData !== null) {
@@ -59,7 +58,6 @@ function Mainbar() {
   const popupbox = () => {
     setbuttonpopup(true);
     setcondition(true);
-    //setshownotes(true);
     new Audio(popup).play();
   }
 
@@ -76,7 +74,6 @@ function Mainbar() {
   }
 
   const opennotes = (show, a, b, c) => {
-
     setiid(show);
     let notes = localStorage.getItem(show);
     setcon(JSON.parse(notes));
@@ -89,20 +86,13 @@ function Mainbar() {
   }
 
   const storenotes = () => {
-    console.log(iid);
     setimage(disable);
     if (typednote == "" || typednote === undefined) {
       alert('Please type something to store as a note!');
       return;
     }
-
     new Audio(send).play();
-
-    console.log(typednote);
-
     let group = JSON.parse(localStorage.getItem(iid));
-    console.log(group);
-
     const today = new Date();
     const month = today.toLocaleString("en-US", { month: "short" });
     const year = today.getFullYear();
@@ -116,26 +106,17 @@ function Mainbar() {
     localStorage.setItem(iid, JSON.stringify(group));
     document.getElementById('Note').value = "";
     typednote = "";
-    console.log(typednote);
     setcon(JSON.parse(localStorage.getItem(iid)));
   }
 
   const storenotes2 = () => {
-
-    console.log(iid);
     setimage2(mobilesend);
     if (typednote == "" || typednote === undefined) {
       alert('Please type something to store as a note!');
       return;
     }
-
     new Audio(send).play();
-
-    console.log(typednote);
-
     let group = JSON.parse(localStorage.getItem(iid));
-    console.log(group);
-
     const today = new Date();
     const month = today.toLocaleString("en-US", { month: "short" });
     const year = today.getFullYear();
@@ -149,22 +130,17 @@ function Mainbar() {
     localStorage.setItem(iid, JSON.stringify(group));
     document.getElementById('Note2').value = "";
     typednote = "";
-    console.log(typednote);
     setcon(JSON.parse(localStorage.getItem(iid)));
   }
 
-
   return (
     <div>
-
       <div className={styles.title}>Pocket Notes</div>
       <div className={styles.addbtn} onClick={() => popupbox()}><div className={styles.btn} style={{ cursor: 'pointer' }}>
         +</div></div>
       {condition ?
         <div className={styles.showinfo}>
-
           {display.map((display) => (
-
             <div className={styles.onhover} onClick={() => opennotes(display.substring(0, 2),
               display.substring(2, 9), display.substring(9, 11), display.substring(11, display.length))}>&ensp;<br />&nbsp;
               <span className={styles.user1} style={{ background: display.substring(2, 9) }}>
@@ -173,11 +149,8 @@ function Mainbar() {
               <span className={styles.user}>
                 {display.substring(11, display.length)}
               </span>
-
             </div>
-
           ))}
-
         </div>
         : ""}
       {pic ?
@@ -193,32 +166,26 @@ function Mainbar() {
         </div>
         :
         <>
-        
-        <div className={styles.pic}>
-        <div className={styles.topbar2} ></div>
-        <div className={styles.topbar}  ></div>
-          <div className={styles.textarealayout}>
-            <textarea className={styles.design}
-              placeholder='Enter your text here...........' id='Note' onChange={(e) => { handlechange(e) }} >
-            </textarea>
+          <div className={styles.pic}>
+            <div className={styles.topbar2} ></div>
+            <div className={styles.topbar}  ></div>
+            <div className={styles.textarealayout}>
+              <textarea className={styles.design}
+                placeholder='Enter your text here...........' id='Note' onChange={(e) => { handlechange(e) }} >
+              </textarea>
+            </div>
+            <img src={image} alt='abc' className={styles.send} onClick={() => storenotes()}></img>
           </div>
-          <img src={image} alt='abc' className={styles.send} onClick={() => storenotes()}></img>
-        </div>
         </>
       }
       {shownotes ?
         <>
-          
-            <img src={Backarrow} alt='' className={styles.backarrow} onClick={() => {
-              setshownotes(false);
-              setcondition(true);
-              setpic(true);
-            }}></img>
-            <div className={styles.initials} style={{ background: bgcolor }}>{initials}</div>
-          
-         
-            
-          
+          <img src={Backarrow} alt='' className={styles.backarrow} onClick={() => {
+            setshownotes(false);
+            setcondition(true);
+            setpic(true);
+          }}></img>
+          <div className={styles.initials} style={{ background: bgcolor }}>{initials}</div>
           <div className={styles.heading}>{title}</div>
           <div className={styles.scrollarea}>
             {con.map((con) => (
@@ -249,7 +216,6 @@ function Mainbar() {
         ""
       }
       <Acceptinput trigger={buttonpopup} settrigger={setbuttonpopup} storein={count} setstorein={setcount} />
-
     </div>
   )
 }
